@@ -7,6 +7,8 @@ exports.up = function(knex) {
 		table.float('mileage').notNullable();
 		table.string('transmission', 64);
 		table.string('title status', 64);
+
+		table.timestamps(true, true);
 	});
 };
 
